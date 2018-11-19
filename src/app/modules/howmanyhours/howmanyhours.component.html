@@ -1,0 +1,32 @@
+<div class="m-marketing m-howmanyhours">
+
+  <div class="m-marketing--hero">
+    <div class="m-marketing--hero--video">
+      <video autoplay muted loop *ngIf="!videoError; else fallback">
+        <source [src]="minds.cdn_assets_url + 'assets/videos/space-1/space-1.mp4'" type="video/mp4" (error)="onSourceError()">
+      </video>
+      <ng-template #fallback>
+        <img [src]="minds.cdn_assets_url + 'assets/marketing/space-1.png'">
+      </ng-template>
+    </div>
+
+    <div class="m-marketing--hero--inner">
+
+      <div class="m-marketing--hero--overlay"></div>
+
+      <div class="m-marketing--hero--slogans">
+
+        <h1 i18n="@@M__BLOCKCHAIN__MKT__MINDS_HOW_LONG_TITLE">You've been registered for</h1>
+        <h2 i18n="@@M__BLOCKCHAIN__MKT__MINDS_TIME">
+           Time: {{seconds}}
+        </h2>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<m-footer></m-footer>

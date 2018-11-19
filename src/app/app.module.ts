@@ -52,6 +52,7 @@ import { BlockchainMarketingModule } from './modules/blockchain/marketing/market
 import { BrandingModule } from './modules/branding/branding.module';
 import { CommentsModule } from './modules/comments/comments.module';
 import { NodesMarketingModule } from './modules/nodes/nodes.module';
+import { HowmanyhoursModule } from './modules/howmanyhours/howmanyhours.module';
 
 @NgModule({
   bootstrap: [
@@ -100,11 +101,12 @@ import { NodesMarketingModule } from './modules/nodes/nodes.module';
     NewsfeedModule,
     MediaModule,
     AuthModule,
-    BlockchainModule,    
+    BlockchainModule,
     BlockchainMarketingModule,
     NodesMarketingModule,
     BrandingModule,
     CommentsModule,
+    HowmanyhoursModule,
 
     //last due to :username route
     ChannelsModule,
